@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a{
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id='root'>
+      <details id='php'>
+        <summary>PHP</summary>
+        <ul>
+          <li><label>1. </label><a href="#" handle="/php/one">https://blog.csdn.net/qq_32865887/article/details/79398095</a></li>
+        </ul>
+      </details>
+      <details id='web'>
+        <summary>WEB</summary>
+        <ul>
+          <li><label>1. </label><a href="#" handle="/web/one">https://www.cnblogs.com/weven/p/7236111.html</a></li>
+        </ul>
+      </details>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#root').on('click', function(evt){
+                const target = evt.target
+                if(evt.target.tagName === 'A'){
+                    let type = $(target).parents('details')[0].id
+                    let handle = $(evt.target).attr('handle')
+                    let url = target.innerHTML
+
+                    $.post(handle,{type, url}).then(res => {
+                        if(res.code == 200) {
+                            alert('操作成功,' + res.msg? res.msg: '')
+                        }else{
+                            alert(res.msg)
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+</html>

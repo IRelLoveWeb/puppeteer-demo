@@ -1,0 +1,15 @@
+{
+    "web": {
+        "js": ["js", "javascript", "typeof", "prototype", " bind", "promise", "this", "function", "call", "property", "attribute","setTimeout","iframe",
+                "apply", "ajax", "json", "===", "strict", "window", "navigator", "cross", "http", "url", "es6", "new", "webpack", "tcp", "h5", "get", "post",
+                "原型", "继承", "变量", "检测", "闭包", "函数", "模式", "对象", "事件", "加载时间",  "跨域", "移动端", "链表", "缓存", "跨域", "设计模式", 
+                "同源", "进程", "线程", "优化", "域名", "性能", "哈希表", "原型链", "安全", "数据类型", "冒泡", "表达式", "数组", "加载", "状态码", "去除"
+        ],
+        "css": ["css", "display", "svg", "media", "box", "div", "link", "margin", "scss", 
+                "效果" ,"高度", "元素", "浮动",  "方向", "定位", "浏览器", "盒模型", "优雅", 
+                "图片", "隐藏", "栅格", "布局", "移动", "媒体查询", "盒子" , "网页", "样式", 
+                "文档类型", "样式", "字体", "渐进增强", "布局"
+        ],
+        "html": ["html", "语义化", "script", "data-", "cookie", "storege","doctype","document" , "标签", "多语言", "网页标准", "ie"]
+    }
+}
